@@ -53,13 +53,13 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-origin").waypoint(
+  $(".js--section-heals").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".origin").addClass("underline");
+        $(".heals").addClass("underline");
       }
       if (direction == "up") {
-        $(".origin").removeClass("underline");
+        $(".heals").removeClass("underline");
       }
     },
     {
@@ -67,15 +67,15 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-cause").waypoint(
+  $(".js--section-soothes").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".origin").removeClass("underline");
-        $(".causes").addClass("underline");
+        $(".heals").removeClass("underline");
+        $(".soothess").addClass("underline");
       }
       if (direction == "up") {
-        $(".origin").addClass("underline");
-        $(".causes").removeClass("underline");
+        $(".heals").addClass("underline");
+        $(".soothess").removeClass("underline");
       }
     },
     {
@@ -83,119 +83,16 @@ $(document).ready(function () {
     }
   );
   
-  $(".js--message-1").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-1").addClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-1").removeClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-2").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-2").addClass("message-rs-hover");
-        $(".js--message-1").removeClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-2").removeClass("message-rs-hover");
-        $(".js--message-1").addClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-3").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-3").addClass("message-ls-hover");
-        $(".js--message-2").removeClass("message-rs-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-3").removeClass("message-ls-hover");
-        $(".js--message-2").addClass("message-rs-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-4").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-4").addClass("message-rs-hover");
-        $(".js--message-3").removeClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-4").removeClass("message-rs-hover");
-        $(".js--message-3").addClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-5").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-5").addClass("message-ls-hover");
-        $(".js--message-4").removeClass("message-rs-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-5").removeClass("message-ls-hover");
-        $(".js--message-4").addClass("message-rs-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-6").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-6").addClass("message-rs-hover");
-        $(".js--message-5").removeClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-6").removeClass("message-rs-hover");
-        $(".js--message-5").addClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-7").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-7").addClass("message-ls-hover");
-        $(".js--message-6").removeClass("message-rs-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-7").removeClass("message-ls-hover");
-        $(".js--message-6").addClass("message-rs-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
 
-  $(".js--section-effect").waypoint(
+  $(".js--section-connect").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".causes").removeClass("underline");
-        $(".effect").addClass("underline");
+        $(".soothess").removeClass("underline");
+        $(".connect").addClass("underline");
       }
       if (direction == "up") {
-        $(".causes").addClass("underline");
-        $(".effect").removeClass("underline");
+        $(".soothess").addClass("underline");
+        $(".connect").removeClass("underline");
       }
     },
     {
@@ -203,15 +100,15 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-solution").waypoint(
+  $(".js--section-impact").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".effect").removeClass("underline");
-        $(".solution").addClass("underline");
+        $(".connect").removeClass("underline");
+        $(".impact").addClass("underline");
       }
       if (direction == "up") {
-        $(".effect").addClass("underline");
-        $(".solution").removeClass("underline");
+        $(".connect").addClass("underline");
+        $(".impact").removeClass("underline");
       }
     },
     {
@@ -219,73 +116,73 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--solution-support-1").waypoint(
+  $(".js--impact-support-1").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-1").addClass("solution-support-rs-hover");
+        $(".js--impact-support-1").addClass("impact-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-1").removeClass("solution-support-rs-hover");
+        $(".js--impact-support-1").removeClass("impact-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-2").waypoint(
+  $(".js--impact-support-2").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-2").addClass("solution-support-ls-hover");
-        $(".js--solution-support-1").removeClass("solution-support-rs-hover");
+        $(".js--impact-support-2").addClass("impact-support-ls-hover");
+        $(".js--impact-support-1").removeClass("impact-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-2").removeClass("solution-support-ls-hover");
-        $(".js--solution-support-1").addClass("solution-support-rs-hover");
+        $(".js--impact-support-2").removeClass("impact-support-ls-hover");
+        $(".js--impact-support-1").addClass("impact-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-3").waypoint(
+  $(".js--impact-support-3").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-3").addClass("solution-support-rs-hover");
-        $(".js--solution-support-2").removeClass("solution-support-ls-hover");
+        $(".js--impact-support-3").addClass("impact-support-rs-hover");
+        $(".js--impact-support-2").removeClass("impact-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-3").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-2").addClass("solution-support-ls-hover");
+        $(".js--impact-support-3").removeClass("impact-support-rs-hover");
+        $(".js--impact-support-2").addClass("impact-support-ls-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-4").waypoint(
+  $(".js--impact-support-4").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-4").addClass("solution-support-ls-hover");
-        $(".js--solution-support-3").removeClass("solution-support-rs-hover");
+        $(".js--impact-support-4").addClass("impact-support-ls-hover");
+        $(".js--impact-support-3").removeClass("impact-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-4").removeClass("solution-support-ls-hover");
-        $(".js--solution-support-3").addClass("solution-support-rs-hover");
+        $(".js--impact-support-4").removeClass("impact-support-ls-hover");
+        $(".js--impact-support-3").addClass("impact-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-5").waypoint(
+  $(".js--impact-support-5").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-5").addClass("solution-support-rs-hover");
-        $(".js--solution-support-4").removeClass("solution-support-ls-hover");
+        $(".js--impact-support-5").addClass("impact-support-rs-hover");
+        $(".js--impact-support-4").removeClass("impact-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-5").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-4").addClass("solution-support-ls-hover");
+        $(".js--impact-support-5").removeClass("impact-support-rs-hover");
+        $(".js--impact-support-4").addClass("impact-support-ls-hover");
       }
     },
     {
@@ -294,15 +191,15 @@ $(document).ready(function () {
   );
 
 
-  $(".js--solution-conclusion").waypoint(
+  $(".js--impact-conclusion").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-conclusion").addClass("solution-conclusion-hover");
-        $(".js--solution-support-5").removeClass("solution-support-rs-hover");
+        $(".js--impact-conclusion").addClass("impact-conclusion-hover");
+        $(".js--impact-support-5").removeClass("impact-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-conclusion").removeClass("solution-conclusion-hover");
-        $(".js--solution-support-5").addClass("solution-support-rs-hover");
+        $(".js--impact-conclusion").removeClass("impact-conclusion-hover");
+        $(".js--impact-support-5").addClass("impact-support-rs-hover");
       }
     },
     {
